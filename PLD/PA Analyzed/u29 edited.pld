@@ -1,0 +1,124 @@
+Name     u29;
+PartNo   ;
+Date     ;
+Revision ;
+Designer ;
+Company  ;
+Assembly ;
+Location ;
+Device   virtual;
+
+/* Dedicated input pins */
+
+pin 1   = REJ3; /* Input */
+pin 2   = A18; /* Input */
+pin 3   = RESET; /* Input */
+pin 4   = RW; /* Input */
+pin 5   = UDS; /* Input */
+pin 6   = LDS; /* Input */
+pin 7   = REJKICK; /* Input */
+pin 8   = RE; /* Input */
+pin 9   = C1; /* Input */
+pin 11  = AS; /* Input */
+
+/* Programmable output pins */
+
+pin 12  = ROM01; /* Combinatorial output */
+pin 13  = NOCON; /* Combinatorial output */
+pin 14  = RRW; /* Combinatorial output */
+pin 15  = LCEN; /* Combinatorial output */
+pin 16  = UCEN; /* Combinatorial output */
+pin 17  = CDR; /* Combinatorial output */
+pin 18  = CDW; /* Combinatorial output */
+pin 19  = XOE; /* Combinatorial output */
+
+/* Output equations */
+
+!XOE = !REJ3 &  RW &  REJKICK & !AS;
+!CDW = !RW & !RE;
+!CDR =  A18 & !RESET &  RW & !UDS & !LDS & !REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW & !UDS & !LDS & !REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW & !UDS & !LDS & !REJKICK & !RE &  C1 
+    # !A18 & !RESET & !RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    #  A18 & !RESET & !RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    # !A18 &  RESET & !RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    #  A18 &  RESET & !RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    # !A18 & !RESET &  RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW &  UDS & !LDS & !REJKICK & !RE &  C1 
+    # !A18 & !RESET & !RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    #  A18 & !RESET & !RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    # !A18 &  RESET & !RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    #  A18 &  RESET & !RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    # !A18 & !RESET &  RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW & !UDS &  LDS & !REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW &  UDS &  LDS & !REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW &  UDS &  LDS & !REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW &  UDS &  LDS & !REJKICK & !RE &  C1 
+    # !A18 & !RESET &  RW & !UDS & !LDS &  REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW & !UDS & !LDS &  REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW & !UDS & !LDS &  REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW & !UDS & !LDS &  REJKICK & !RE &  C1 
+    # !A18 & !RESET & !RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    #  A18 & !RESET & !RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    # !A18 &  RESET & !RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    #  A18 &  RESET & !RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    # !A18 & !RESET &  RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW &  UDS & !LDS &  REJKICK & !RE &  C1 
+    # !A18 & !RESET & !RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    #  A18 & !RESET & !RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    # !A18 &  RESET & !RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    #  A18 &  RESET & !RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    # !A18 & !RESET &  RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW & !UDS &  LDS &  REJKICK & !RE &  C1 
+    # !A18 & !RESET &  RW &  UDS &  LDS &  REJKICK & !RE &  C1 
+    #  A18 & !RESET &  RW &  UDS &  LDS &  REJKICK & !RE &  C1 
+    # !A18 &  RESET &  RW &  UDS &  LDS &  REJKICK & !RE &  C1 
+    #  A18 &  RESET &  RW &  UDS &  LDS &  REJKICK & !RE &  C1;
+ UCEN = !A18 & !RESET & !RW & !UDS & !REJKICK & !RE 
+    #  A18 & !RESET & !RW & !UDS & !REJKICK & !RE 
+    # !A18 &  RESET & !RW & !UDS & !REJKICK & !RE 
+    #  A18 &  RESET & !RW & !UDS & !REJKICK & !RE 
+    #  A18 & !RESET &  RW & !UDS & !REJKICK & !RE 
+    # !A18 &  RESET &  RW & !UDS & !REJKICK & !RE 
+    #  A18 &  RESET &  RW & !UDS & !REJKICK & !RE 
+    # !A18 & !RESET & !RW & !UDS &  REJKICK & !RE 
+    #  A18 & !RESET & !RW & !UDS &  REJKICK & !RE 
+    # !A18 &  RESET & !RW & !UDS &  REJKICK & !RE 
+    #  A18 &  RESET & !RW & !UDS &  REJKICK & !RE 
+    # !A18 & !RESET &  RW & !UDS &  REJKICK & !RE 
+    #  A18 & !RESET &  RW & !UDS &  REJKICK & !RE 
+    # !A18 &  RESET &  RW & !UDS &  REJKICK & !RE 
+    #  A18 &  RESET &  RW & !UDS &  REJKICK & !RE;
+ LCEN = !A18 & !RESET & !RW & !LDS & !REJKICK & !RE 
+    #  A18 & !RESET & !RW & !LDS & !REJKICK & !RE 
+    # !A18 &  RESET & !RW & !LDS & !REJKICK & !RE 
+    #  A18 &  RESET & !RW & !LDS & !REJKICK & !RE 
+    #  A18 & !RESET &  RW & !LDS & !REJKICK & !RE 
+    # !A18 &  RESET &  RW & !LDS & !REJKICK & !RE 
+    #  A18 &  RESET &  RW & !LDS & !REJKICK & !RE 
+    # !A18 & !RESET & !RW & !LDS &  REJKICK & !RE 
+    #  A18 & !RESET & !RW & !LDS &  REJKICK & !RE 
+    # !A18 &  RESET & !RW & !LDS &  REJKICK & !RE 
+    #  A18 &  RESET & !RW & !LDS &  REJKICK & !RE 
+    # !A18 & !RESET &  RW & !LDS &  REJKICK & !RE 
+    #  A18 & !RESET &  RW & !LDS &  REJKICK & !RE 
+    # !A18 &  RESET &  RW & !LDS &  REJKICK & !RE 
+    #  A18 &  RESET &  RW & !LDS &  REJKICK & !RE;
+!RRW = !RW & !RE;
+!NOCON = !A18 & !RESET & !RW & !REJKICK & !RE 
+    # !A18 &  RESET & !RW & !REJKICK & !RE 
+    # !A18 &  RESET &  RW & !REJKICK & !RE 
+    # !A18 &  RESET & !RW & !REJKICK &  RE 
+    # !A18 &  RESET &  RW & !REJKICK &  RE;
+!ROM01 = !REJ3 & !A18 & !RESET &  RW & !REJKICK & !AS;
+
+/* End */
+
