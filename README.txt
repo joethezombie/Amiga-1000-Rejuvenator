@@ -1,4 +1,4 @@
-Amiga 1000 Rejuvenator Recreation Project
+Amiga 1000 Rejuvenator Re-creation Project
 -------------------------------------------------------------------------------------------
 
 Any projects, additions, alterations, or improvements based on this Amiga-1000-Rejuvenator
