@@ -2,7 +2,7 @@ Amiga 1000 Rejuvenator Recreation Project
 -------------------------------------------------------------------------------------------
 
 Any projects, additions, alterations, or improvements based on this Amiga-1000-Rejuvenator
-project must be openly shared, includingsoftware or PLD coding.  I belive the license I
+project must be openly shared, including software or PLD coding.  I belive the license I
 have specified in LICENSE equates to this, but I am not a license expert, so suggestions
 are welcomed.  And with that out of the way...
 
