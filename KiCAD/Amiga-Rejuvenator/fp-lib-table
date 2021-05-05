@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name rejuvenator_positions)(type KiCad)(uri ${KIPRJMOD}/rejuvenator_positions.pretty)(options "")(descr ""))
+  (lib (name MOLEX_4455)(type KiCad)(uri ${KIPRJMOD}/MOLEX_4455.pretty)(options "")(descr ""))
+)

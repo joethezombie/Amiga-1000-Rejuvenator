@@ -1,0 +1,72 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3.6V_Varta
+D Battery (multiple cells)
+K batt voltage-source cell
+F ~
+$ENDCMP
+#
+$CMP 74F257
+D Quad 2 to 1 Multiplexer
+K TTL MUX MUX2
+F http://www.ti.com/lit/gpn/sn74LS257
+$ENDCMP
+#
+$CMP 74LS244
+D 8-bit Bus Buffer 3-State outputs
+K TTL Buffer BUS 3State
+F http://www.ti.com/lit/gpn/sn74LS244
+$ENDCMP
+#
+$CMP 74LS244-U16,U17
+D 8-bit Bus Buffer 3-State outputs
+K TTL Buffer BUS 3State
+F http://www.ti.com/lit/gpn/sn74LS241
+$ENDCMP
+#
+$CMP Board2Board[16-pin]
+D generic 16-pin board to board connector
+F ~
+$ENDCMP
+#
+$CMP Board2Board[20-pin]
+D generic 20-pin board to board connector
+F ~
+$ENDCMP
+#
+$CMP OKI6242B
+D REAL TIME CLOCK CALENDAR, DIP-18
+K REAL TIME CLOCK CALENDAR
+$ENDCMP
+#
+$CMP VideoSlot
+D Generic connector, double row, 02x18, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP X2,X4
+D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP X3,X5
+D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP X6,X8
+D Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP X7,X9
+D Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
