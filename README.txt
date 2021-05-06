@@ -12,7 +12,7 @@ upgrade provides up to 2MB Chip Memory, an onboard ROM based kickstart, a video 
 additional Fast memory.  Installation requires replacing the A1000's daughterboard with the
 Rejuvenator.
 
-This project aims to recreate the original Rejuvenator, and eventually improve on the
+This project aims to re-create the original Rejuvenator, and eventually improve on the
 original design.
 
 Schematics and board artwork are complete, and have been fabricated and tested.  Several
@@ -55,7 +55,7 @@ I will continue my efforts as time allows with more hardware study, memory mappi
 signaling.
 
 Best of luck to everyone contributing.  And if anyone has a Rejuvenator for sale, hit me
-up!  ;D
+up!  I'd like to continue the work!  ;D
 
 
 
