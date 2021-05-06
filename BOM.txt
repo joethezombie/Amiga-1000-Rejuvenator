@@ -1,4 +1,4 @@
-Amiga 1000 Rejuvenator BOM
+Amiga 1000 Rejuvenator BOM (not yet complete)
 ----------------------------------------
 BOM does not include memory chips, or realtime clock
 
