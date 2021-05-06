@@ -2,7 +2,7 @@ Amiga 1000 Rejuvenator Re-creation Project
 -------------------------------------------------------------------------------------------
 
 Any projects, additions, alterations, or improvements based on this Amiga-1000-Rejuvenator
-project must be openly shared, including software or PLD coding.  I belive the license I
+project must be openly shared, including software or PLD coding.  I believe the license I
 have specified in LICENSE equates to this, but I am not a license expert, so suggestions
 are welcomed.  And with that out of the way...
 
@@ -49,10 +49,14 @@ insight on the hardware.  Nothing would be better than finally knowing these equ
 
 As of recent, my sporadic efforts had changed from trying to read the PALs, to using a
 hardware analyzer (DSLogic) to recreate the equations.  This will not be possible anymore
-as I have shipped the original board and PALs back to intric8.
+as I have shipped the original board and PALs back to intric8 and no longer have a way to
+compare my effort to the working standard.
 
 I will continue my efforts as time allows with more hardware study, memory mapping, and
-signaling.
+signaling.  Greg Tibbs mentioned in an interview that he only used the PALs to provide the
+equations in Gary, as Commodore would not source them that chip.  I can't help but feel the
+answer is looking us right in the face-- something I'm not just seeing...
+Anyway, I digress.
 
 Best of luck to everyone contributing.  And if anyone has a Rejuvenator for sale, hit me
 up!  I'd like to continue the work!  ;D
