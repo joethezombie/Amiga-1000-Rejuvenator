@@ -54,7 +54,7 @@ compare my effort to the working standard.
 
 I will continue my efforts as time allows with more hardware study, memory mapping, and
 signaling.  Greg Tibbs mentioned in an interview that he only used the PALs to provide the
-equations in Gary, as Commodore would not source them that chip.  I can't help but feel the
+equations taken from Gary, as Commodore would not source them that chip.  I can't help but feel the
 answer is looking us right in the face-- something I'm not just seeing...
 Anyway, I digress.
 
