@@ -28,10 +28,3 @@ DAE = C3 & C1
 
 ROME = AS &  A23 &  A22 &  A21 &  A20 &  A19 & !OVR
      # AS & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & !OVL;
-
-
-
-
-
-
-
