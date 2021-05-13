@@ -47,13 +47,3 @@ BLS = AS & !DTACK & !A23 & !A22 & !A21 & OVL & !C1 & C3 & !OVR
     # AS & !DTACK &  A23 &  A22 & !A21 & !C1 & C3 & !OVR
     # BLS & !C1
     # BLS & !C3;
-
-
-
-
-
-
-
-
-
-
