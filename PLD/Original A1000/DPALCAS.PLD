@@ -1,0 +1,48 @@
+Name     DPALCAS ;
+PartNo   00 ;
+Date     5/7/2021 ;
+Revision 01 ;
+Designer Joe Carter ;
+Company  amigalove.com ;
+Assembly None ;
+Location U6K ;
+Device   G16V8MA ;
+
+
+PIN [1..20] = [!ARW, A20,    A19, !PRW, !UDS,  !LDS,  !ROME, !RE,  !RGAE, GND,
+               !DAE, !ROM01, !C1, !RRW, !LCEN, !UCEN, !CDR,  !CDW, !NC,  VCC];
+
+
+
+ROM01 = ROME &  A20 &  A19 & !PRW 
+      # ROME & !A20 & !A19 & !PRW;
+
+CDR = RE & !PRW & !C1
+    # RGAE & !PRW & !C1
+    # CDR & LDS
+    # CDR & UDS;
+
+CDW = RE & PRW
+    # RGAE & PRW
+    # CDW & !C1;
+
+UCEN = DAE & !RE & UCEN
+     # DAE & !RE & C1
+     # DAE & !UDS & C1
+     # DAE & !UDS & UCEN;
+
+LCEN = DAE & !RE & LCEN
+     # DAE & !RE & C1
+     # DAE & !LDS & C1
+     # DAE & !LDS & LCEN;
+
+RRW = RE & PRW
+    # !DAE & ARW & C1
+    # RRW & !DAE;
+
+
+
+
+
+
+

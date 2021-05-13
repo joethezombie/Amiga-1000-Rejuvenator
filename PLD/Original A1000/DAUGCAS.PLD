@@ -1,0 +1,45 @@
+Name     DAUGCAS ;
+PartNo   00 ;
+Date     5/7/2021 ;
+Revision 01 ;
+Designer Joe Carter ;
+Company  amigalove.com ;
+Assembly None ;
+Location U6J ;
+Device   G16V8MA ;
+
+
+PIN [1..20] = [!SPROM, A18,   A17,   !PRW, !UDS,  !LDS,  !RE,  !RES, !ROME,  GND,
+               !C1,    !BERR, !WPRO, !RRW, !LCEN, !UCEN, !CDR, !CDW, !ROM01, VCC];
+
+
+
+ROM01 = ROME & !A18 & !WPRO & !SPROM & !PRW;
+
+CDR = CDR & LDS
+    # CDR & UDS
+    # RE & !PRW & C1 &  A18
+    # RE & !PRW & C1 & !A18 & WPRO
+    # RE & !PRW & C1 & !A18 & SPROM;
+
+CDW = RE & PRW
+    # CDW & C1;
+
+
+UCEN = UCEN & C1
+     # RE & UDS &  A18
+     # RE & UDS & !A18 & WPRO
+     # RE & UDS & !A18 & SPROM;
+
+LCEN = LCEN & C1
+    # RE & LDS &  A18
+    # RE & LDS & !A18 & WPRO
+    # RE & LDS & !A18 & SPROM;
+
+RRW = RE & PRW & A18 & !WPRO & !SPROM;
+
+BERR = WPRO & PRW & RE;
+
+WPRO = WPRO & !RES 
+     # PRW & RE & !A18;
+

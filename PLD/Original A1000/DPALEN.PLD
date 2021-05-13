@@ -1,0 +1,59 @@
+Name     DPALEN ;
+PartNo   00 ;
+Date     5/7/2021 ;
+Revision 01 ;
+Designer Joe Carter ;
+Company  amigalove.com ;
+Assembly None ;
+Location U6N ;
+Device   G16V8MA ;
+
+
+PIN [1..20] = [A23, A22,  A21,     !AS,  !DBR,  !OVL, !OVR,   XRDY, C3, GND,
+               !C1, !VPA, !MYRAME, !DAE, !RGAE, !RE,  !DTACK, !BLS, NC, VCC];
+
+
+
+VPA = AS & A23 & !A22 & A21;
+VPA.oe = !OVR;
+
+MYRAME = AS & !DTACK &  A23 &  A22 &  A21 & !OVR & !C1 & C3
+       # AS & !DTACK & !A23 & !A22 & !A21 & !OVR & !OVL & !C1 & C3
+       # MYRAME & !C1
+       # MYRAME & !C3;
+
+RE = !DBR & AS & !DTACK & !A23 & !A22 & !A21 & OVL & !C1 & C3 & !OVR
+   # RE & !C1
+   # RE & !C3;
+
+DTACK = AS & !A23 & !A22 & A21 & XRDY
+      # AS & !A23 & A22 & XRDY
+      # AS &  A23 & !A22 & !A21 & XRDY
+      # MYRAME & XRDY & !C3
+      # RE & !C3
+      # RGAE & !C3
+      # AS & DTACK & XRDY;
+DTACK.oe = !OVR;
+
+RGAE = !DBR & AS & !DTACK & A23 & A22 & !A21 & !C1 & C3 & !OVR
+     # RGAE & !C1
+     # RGAE & !C3;
+
+DAE = DBR & !C1 & C3
+    # DAE & !C1
+    # DAE & !C3;
+
+BLS = AS & !DTACK & !A23 & !A22 & !A21 & OVL & !C1 & C3 & !OVR
+    # AS & !DTACK &  A23 &  A22 & !A21 & !C1 & C3 & !OVR
+    # BLS & !C1
+    # BLS & !C3;
+
+
+
+
+
+
+
+
+
+

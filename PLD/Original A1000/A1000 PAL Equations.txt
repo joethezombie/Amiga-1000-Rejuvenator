@@ -1,0 +1,6 @@
+The original A1000 PAL equations for DPALEN, DPALCAS, DAUGEN, and DAUGCAS are available on the internet.
+However, the equations have typos, missing operators, and are untested.  Here, I will attempt to
+re-create the original equations to assist in Rejuvenator PAL decoding.
+
+To do: Compile and test these in the Amiga 1000 to make sure we have an accurate baseline.
+
