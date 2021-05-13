@@ -3,4 +3,7 @@ on the internet as scanned from the A1000 design sources.  However, the equation
 typos, missing operators, and are untested.  Here, I will attempt to re-create the
 original equations to assist in Rejuvenator PAL decoding.
 
+These equations are formated for WinCUPL, targetting Ateml ATF16V8 devices, but can be
+easily modified for other compilers.
+
 To do: Compile and test these in the Amiga 1000 to make sure we have an accurate baseline.
