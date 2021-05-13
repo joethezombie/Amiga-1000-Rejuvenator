@@ -1,0 +1,80 @@
+Very preliminary... much to do here, stay tuned.
+
+Mainboard:
+
+CAS Header (U5M on mainboard):
+    Rejuvenator holds _RGAE and _DAE high, and disconnects _ARW _ROME _PALOPE.
+     _ARW leads to pin 16 of original Agnus socket, that pin is unused in Rejuv.
+     _ROME connected to Rejuve via EN header, pin 13, then back up CAS header pin 7 where it is unconnected.
+     _PALOPE is connected only to expansion port.  Exact function is unknown, perhaps never used.
+             No equation present in DPALCAS (pin is nc). Not present in A2000.
+
+EN Header (U5L on mainboard):
+     Rejuvenator disconnects _DBR _DAE _RGAE _RE
+     _DBR leads to pin 15 of original Agnus socket, that pin is unused in Rejuvenator.
+     _DAE and _RGAE held high through mainboard connection to CAS header (see above)
+     _RE still connected to Rejvenator via CAS header, pin 8.
+
+  Because _RGAE is held high, LS244 U4J pins 1 and 19 are high.  Disables the Y outputs, leaving output pins in Z state.
+  (Disables A1-8 Address lines from hitting the RGA bus)
+
+  Because _DAE is held high, F374 U2H pin 1 is high.  Disables the OE, leaving the output pins in Z state.
+  (Disables DRA lines from original Agnus from hitting the RA bus)
+
+Clip Leads to Rejuvenator:
+    RMBCLKS clip lead - Reset MainBoard CLocKs - Holds the mainboard clocks in reset using R8/C32 delay timer.  Allows
+                        time for the Rejuvenator to initialize before the mainboard becomes active.
+    28MHz - Gathers 28MHz from the mainboard.
+    12V - 12V from the mainboard, for recharging the clock battery.
+
+
+
+
+  Memory Config Jumpers:
+    When using the ROM option (JP100 open), you can configure the mainboard RAM using the J101 and J102:
+       J101 J102
+        ON   ON   -  C00000 512kb    autoconfig (slow-fast RAM)
+        ON   OFF  -  C00000 1Meg     autoconfig (slow-fast RAM) (if you have 1Meg Mainboard Hack?)
+        OFF  ON   -  700000 512kb/1M addmem required
+        OFF  OFF  -  A80000 512Kb/1M addmem required
+             
+    When JP100 is closed, Rejuvenator will store 256K ROM file from disk into the front RAM expansion.
+    The remaining 256K on the mainboard can be moved to A0000 or 70000 by changing J101 and J102.
+       J101 J102
+        X    X    -  F00000-FFFFFF WCS 256K/512K Addmem
+        OFF  ON   -  700000-7FFFFF Addmem Required
+        OFF  OFF  -  A8000-B7FFF   Addmem Required
+   
+
+  Signals:
+
+    _ROM01 - generated on pin 12 of U29, SBGCAS
+    If _ROM01 is low: Enable the ROM chips at motherboard positions U2N, U2P, U5N, U5P.
+    (ROM01 is connected to Pin 22 (OE) of all 4 ROM positions on the mainboard.
+
+    Equation (not simplified):
+
+    !ROM01 = !REJ3 & !A18 & !RESET & PRW & !REJKICK & !AS;
+      REJ3 is generated on Pin 19 of U28, SBPALN90
+      (!REJ3 =  A23 &  A22 &  A21 & OVR;)
+      _PRW (processor read/write) is generated on the 68000.  If low, write operation.  If high, read operation.
+      REJKICK is jumper JP100.  It must be jumpered to enable the motherboard ROMs.
+      _AS (address strobe) is generated on the 68000
+
+
+    _RE - generated on pin 16 of U31, SXRFSH90
+          connected to pin 8 of CAS header on mainboard.
+          connects back up to Rejuvenator on S257 headers at U2I and U2J
+          when low, enables 74F257s at U3 and U35 to allow 2-1 multiplexing of address lines to the RA bus.
+          when high, RA bus is left in Z state.
+
+          
+    
+
+     
+
+
+
+
+
+
