@@ -39,10 +39,3 @@ LCEN = DAE & !RE & LCEN
 RRW = RE & PRW
     # !DAE & ARW & C1
     # RRW & !DAE;
-
-
-
-
-
-
-
