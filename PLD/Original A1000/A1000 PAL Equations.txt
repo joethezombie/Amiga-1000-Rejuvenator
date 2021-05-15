@@ -1,7 +1,7 @@
 The original A1000 PAL equations for DPALEN, DPALCAS, DAUGEN, and DAUGCAS are available
 on the internet as scanned from the A1000 design sources.  However, the equations have
 typos, missing operators, and are untested.  Here, I will attempt to re-create the
-original equations to assist in Rejuvenator PAL decoding.
+original equations to assist in Rejuvenator PAL equations re-creation.
 
 These equations are formated for WinCUPL, targetting Atmel ATF16V8 devices, but can be
 easily modified for other compilers.
