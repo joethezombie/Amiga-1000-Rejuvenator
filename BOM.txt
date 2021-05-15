@@ -1,6 +1,6 @@
 Amiga 1000 Rejuvenator BOM (not yet complete)
 ----------------------------------------
-BOM does not include memory chips, or realtime clock
+BOM does not include the Amiga custom chips, ROM, memory, or realtime clock.
 
 
 Qty.1  Molex 22-14-2024 CONN RCPT    2POS  X1
