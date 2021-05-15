@@ -36,6 +36,17 @@ F 3 "" H 14850 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Logic_Programmable:PAL20L8 U30
+U 1 1 5B83B3CF
+P 14850 10900
+F 0 "U30" H 14550 11700 50  0000 C CNN
+F 1 "PAL20L8" H 15050 11700 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W7.62mm" H 14850 10900 50  0001 C CNN
+F 3 "" H 14850 10900 50  0001 C CNN
+	1    14850 10900
+	1    0    0    -1  
+$EndComp
+$Comp
 L Amiga-Rejuvenator:OKI6242B U27
 U 1 1 5B83D629
 P 8250 5850
@@ -2406,13 +2417,13 @@ Entry Wire Line
 Text Label 22450 7750 0    50   ~ 0
 ~RESET
 Text Label 22450 7650 0    50   ~ 0
-REJ.KICK
+REJKICK
 Text Label 15400 13200 0    50   ~ 0
-REJ.KICK
+REJKICK
 Text Label 14300 7500 2    50   ~ 0
-REJ.1
+REJ1
 Text Label 15400 10600 0    50   ~ 0
-REJ.1
+REJ1
 $Comp
 L power:+5V #PWR0170
 U 1 1 6DAA9F48
@@ -2443,13 +2454,13 @@ Text Label 22750 6600 2    50   ~ 0
 Wire Wire Line
 	13150 11400 14350 11400
 Text Label 14300 11400 2    50   ~ 0
-RW
+~PRW
 Entry Wire Line
 	22250 6800 22150 6700
 Wire Wire Line
 	23000 6800 22250 6800
 Text Label 22750 6800 2    50   ~ 0
-RW
+~PRW
 Wire Wire Line
 	13150 11500 14350 11500
 Text Label 14300 11500 2    50   ~ 0
@@ -2493,9 +2504,9 @@ Text Label 15400 7400 0    50   ~ 0
 Text Label 15400 13700 0    50   ~ 0
 ~RE
 Text Label 14300 10400 2    50   ~ 0
-REJ.2
+REJ2
 Text Label 15400 13800 0    50   ~ 0
-REJ.2
+REJ2
 $Comp
 L 74xx:74LS245 U1
 U 1 1 72BC7C7A
@@ -2508,13 +2519,13 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 4800 3250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 5550 3750 2    50   ~ 0
-REJ.~CE
+~DAE
 Wire Wire Line
 	13150 10500 14350 10500
 Text Label 14300 10500 2    50   ~ 0
-REJ.~CE
+~DAE
 Text Label 15400 13300 0    50   ~ 0
-REJ.~CE
+~DAE
 Wire Wire Line
 	13150 10800 14350 10800
 Text Label 14300 10800 2    50   ~ 0
@@ -2538,9 +2549,9 @@ Wire Wire Line
 Text Label 14300 14300 2    50   ~ 0
 ~C3
 Text Label 15400 7100 0    50   ~ 0
-REJ.3
+REJ3
 Text Label 14300 13100 2    50   ~ 0
-REJ.MCFG2
+MCFG2
 $Comp
 L Device:R_Network09_US RP5
 U 1 1 5C638A1D
@@ -2553,7 +2564,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 11900 13400 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Text Label 12450 13100 0    50   ~ 0
-REJ.MCFG2
+MCFG2
 $Comp
 L Device:Jumper_NC_Small JP101
 U 1 1 5D295E49
@@ -2599,9 +2610,9 @@ F 3 "" H 11800 14600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 12450 13000 0    50   ~ 0
-REJ.MCFG1
+MCFG1
 Text Label 14300 14400 2    50   ~ 0
-REJ.MCFG1
+MCFG1
 Text Label 14300 13600 2    50   ~ 0
 A20
 Text Label 15400 7500 0    50   ~ 0
@@ -2613,16 +2624,16 @@ A17
 Text Label 15400 7200 0    50   ~ 0
 ~BLS
 Text Label 15400 7700 0    50   ~ 0
-~MYRAME
+~ROME
 Text Label 15400 7800 0    50   ~ 0
 ~VPA
 NoConn ~ 15350 13600
 Text Label 15400 13400 0    50   ~ 0
 ~REGEN
 Text Label 9000 6150 0    50   ~ 0
-RTC.~RD
+~CLKR
 Text Label 15400 10900 0    50   ~ 0
-RTC.~RD
+~CLKR
 $Comp
 L Amiga-Rejuvenator:74LS393-U2 U2
 U 1 1 60B481AC
@@ -2657,35 +2668,35 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS257" H 4800 5150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 15400 10800 0    50   ~ 0
-REJ.~OE1
+~CDRREJ
 Entry Wire Line
 	10550 12250 10450 12350
 Text Label 9750 12350 2    50   ~ 0
-REJ.~OE1
+~CDRREJ
 Entry Wire Line
 	10550 10450 10450 10550
 Wire Wire Line
 	10450 10550 9450 10550
 Text Label 9750 10550 2    50   ~ 0
-REJ.~OE1
+~CDRREJ
 Text Label 15400 10700 0    50   ~ 0
-REJ.~OE2
+~CDWREJ
 Entry Wire Line
 	10550 13950 10450 14050
 Wire Wire Line
 	10450 14050 9500 14050
 Text Label 9850 14050 2    50   ~ 0
-REJ.~OE2
+~CDWREJ
 Entry Wire Line
 	10550 8450 10450 8550
 Wire Wire Line
 	10450 8550 9500 8550
 Text Label 9850 8550 2    50   ~ 0
-REJ.~OE2
+~CDWREJ
 Wire Wire Line
 	12100 13200 12200 13200
 Text Label 12450 12550 0    50   ~ 0
-REJ.KICK
+REJKICK
 NoConn ~ 12100 13300
 NoConn ~ 12100 13400
 NoConn ~ 12100 13500
@@ -2693,15 +2704,15 @@ NoConn ~ 12100 13600
 NoConn ~ 12100 13700
 NoConn ~ 12100 13800
 Text Label 15400 10500 0    50   ~ 0
-REJ.4
+~CNT
 Text Label 5700 1200 2    50   ~ 0
-REJ.4
+~CNT
 NoConn ~ 15350 10400
 NoConn ~ 15350 10300
 Text Label 9000 5950 0    50   ~ 0
-RTC.~WR
+~CLKW
 Text Label 15400 10200 0    50   ~ 0
-RTC.~WR
+~CLKW
 Wire Wire Line
 	7800 8550 7500 8550
 Entry Wire Line
@@ -7134,17 +7145,6 @@ Text Notes 6850 9450 0    50   ~ 0
 MB\n74LS244
 Text Notes 6850 11250 0    50   ~ 0
 MB\n74LS244
-$Comp
-L Amiga-Rejuvenator:Board2Board[20-pin] U36
-U 1 1 5ECAE079
-P 14850 2700
-F 0 "U36" H 14600 3300 50  0000 C CNN
-F 1 "PALCAS" H 14850 2750 79  0000 C CNN
-F 2 "MOLEX_4455:MOLEX_4455-10_W7.62mm[x2-R]" H 14850 2750 50  0001 C CNN
-F 3 "~" H 14850 2750 50  0001 C CNN
-	1    14850 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	15500 3100 15300 3100
 Wire Wire Line
@@ -7178,7 +7178,7 @@ A20
 Text Label 14350 2400 2    50   ~ 0
 A19
 Text Label 14350 2500 2    50   ~ 0
-RW
+~PRW
 Text Label 14350 2600 2    50   ~ 0
 ~UDS
 Text Label 14350 2700 2    50   ~ 0
@@ -7244,8 +7244,6 @@ F 3 "" H 15500 3100 50  0001 C CNN
 	1    15500 3100
 	0    1    1    0   
 $EndComp
-Text Notes 14200 2200 0    50   ~ 0
-~ARW
 Text Notes 14350 2800 2    50   ~ 0
 ~ROME
 Text Notes 14150 3000 0    50   ~ 0
@@ -7326,7 +7324,7 @@ Text Label 15300 5900 0    50   ~ 0
 Text Label 15300 6000 0    50   ~ 0
 ~DTACK
 Text Label 15300 6400 0    50   ~ 0
-~MYRAME
+~ROME
 Text Label 15300 6500 0    50   ~ 0
 ~VPA
 Wire Wire Line
@@ -8165,7 +8163,7 @@ Text Label 15450 4300 0    50   ~ 0
 ~ROM01
 NoConn ~ 15400 4200
 Text Label 14350 3600 2    50   ~ 0
-REJ.3
+REJ3
 Text Label 14350 4500 2    50   ~ 0
 ~AS
 Wire Wire Line
@@ -8185,11 +8183,11 @@ Wire Wire Line
 Text Label 14350 3700 2    50   ~ 0
 A18
 Text Label 14350 3900 2    50   ~ 0
-RW
+~PRW
 Wire Wire Line
 	13150 3900 14400 3900
 Text Label 14350 4200 2    50   ~ 0
-REJ.KICK
+REJKICK
 Wire Wire Line
 	13150 4200 14400 4200
 Text Label 14350 3800 2    50   ~ 0
@@ -8619,9 +8617,9 @@ Wire Wire Line
 Text Label 10400 3150 2    50   ~ 0
 C4
 Text Label 10400 3250 2    50   ~ 0
-REJ.~CE
+~DAE
 Text Label 10400 3050 2    50   ~ 0
-REJ.4
+~CNT
 Wire Wire Line
 	3500 7850 4300 7850
 Wire Wire Line
@@ -8650,21 +8648,9 @@ Text Notes 14600 2850 0    79   ~ 0
 HEADER
 Text Notes 15700 13800 0    50   ~ 0
 _CLKE
-Text Notes 15700 13300 0    50   ~ 0
-_DAE
 Text Notes 13850 10400 0    50   ~ 0
 _CLKE
 Text Notes 13650 10500 0    50   ~ 0
-_DAE
-Text Notes 15750 10700 0    50   ~ 0
-_CDW
-Text Notes 15750 10800 0    50   ~ 0
-_CDR
-Text Notes 15700 10500 0    50   ~ 0
-_CNT
-Text Notes 9900 3050 0    50   ~ 0
-_CNT
-Text Notes 9900 3250 0    50   ~ 0
 _DAE
 Connection ~ 11800 14350
 Wire Wire Line
@@ -8681,18 +8667,18 @@ Connection ~ 12300 13000
 Wire Wire Line
 	12300 13000 12950 13000
 $Comp
-L Logic_Programmable:PAL20L8 U30
-U 1 1 5B83B3CF
-P 14850 10900
-F 0 "U30" H 14550 11700 50  0000 C CNN
-F 1 "PAL20L8" H 15050 11700 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W7.62mm" H 14850 10900 50  0001 C CNN
-F 3 "" H 14850 10900 50  0001 C CNN
-	1    14850 10900
+L Amiga-Rejuvenator:Board2Board[20-pin] U36
+U 1 1 5ECAE079
+P 14850 2700
+F 0 "U36" H 14600 3300 50  0000 C CNN
+F 1 "PALCAS" H 14850 2750 79  0000 C CNN
+F 2 "MOLEX_4455:MOLEX_4455-10_W7.62mm[x2-R]" H 14850 2100 50  0001 C CNN
+F 3 "~" H 14850 2100 50  0001 C CNN
+	1    14850 2700
 	1    0    0    -1  
 $EndComp
-Text Notes 15450 4200 0    50   ~ 0
-? ~WPRO
+Text Label 14200 2200 0    50   ~ 0
+~ARW
 Wire Wire Line
 	12400 13100 14350 13100
 Wire Wire Line
