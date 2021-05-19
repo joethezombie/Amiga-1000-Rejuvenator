@@ -31,9 +31,9 @@ UCEN = UCEN & C1
      # RE & UDS & !A18 & SPROM;
 
 LCEN = LCEN & C1
-    # RE & LDS &  A18
-    # RE & LDS & !A18 & WPRO
-    # RE & LDS & !A18 & SPROM;
+     # RE & LDS &  A18
+     # RE & LDS & !A18 & WPRO
+     # RE & LDS & !A18 & SPROM;
 
 RRW = RE & PRW & A18 & !WPRO & !SPROM;
 
