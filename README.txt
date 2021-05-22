@@ -6,6 +6,8 @@ project must be openly shared, including software or PLD coding.  I believe the 
 have specified in LICENSE equates to this, but I am not a license expert, so suggestions
 are welcomed.  And with that out of the way...
 
+Please ask questions, share ideas, or upload the found PLD code to the issues section. ;D
+
 Thanks to the extreme graciousness of intric8 at amigalove.com, I had on loan a Rejuvenator
 board for the Amiga 1000.  Originally created by Greg Tibbs, this Amiga 1000 hardware
 upgrade provides up to 2MB Chip Memory, an onboard ROM based kickstart, a video slot, and
