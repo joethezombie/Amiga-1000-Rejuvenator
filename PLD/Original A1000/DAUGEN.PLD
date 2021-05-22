@@ -9,8 +9,8 @@ Location U6L ;
 Device   G16V8MA ;
 
 
-PIN [1..20] = [A23, A22,  A21, !AS,  !DBR, OVL, !OVR,   XRDY, !C3,    GND,
-               !C1, !CNT, !RE, !DAE, NC,   A19, !DTACK, A20,  !ROME,  VCC];
+PIN [1..20] = [A23, A22,  A21, !AS,  !DBR, OVL, !OVR,   XRDY, !C3,   GND,
+               !C1, !CNT, !RE, !DAE, NC,   A19, !DTACK, A20,  !ROME, VCC];
 
 
 
