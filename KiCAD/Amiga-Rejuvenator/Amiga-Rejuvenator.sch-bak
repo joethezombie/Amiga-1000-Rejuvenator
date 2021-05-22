@@ -2421,9 +2421,9 @@ REJKICK
 Text Label 15400 13200 0    50   ~ 0
 REJKICK
 Text Label 14300 7500 2    50   ~ 0
-REJ1
+_REJ1
 Text Label 15400 10600 0    50   ~ 0
-REJ1
+_REJ1
 $Comp
 L power:+5V #PWR0170
 U 1 1 6DAA9F48
@@ -2504,9 +2504,9 @@ Text Label 15400 7400 0    50   ~ 0
 Text Label 15400 13700 0    50   ~ 0
 ~RE
 Text Label 14300 10400 2    50   ~ 0
-REJ2
+_REJ2
 Text Label 15400 13800 0    50   ~ 0
-REJ2
+_REJ2
 $Comp
 L 74xx:74LS245 U1
 U 1 1 72BC7C7A
@@ -2549,7 +2549,7 @@ Wire Wire Line
 Text Label 14300 14300 2    50   ~ 0
 ~C3
 Text Label 15400 7100 0    50   ~ 0
-REJ3
+_REJ3
 Text Label 14300 13100 2    50   ~ 0
 MCFG2
 $Comp
@@ -8162,8 +8162,6 @@ Text Label 15450 4100 0    50   ~ 0
 Text Label 15450 4300 0    50   ~ 0
 ~ROM01
 NoConn ~ 15400 4200
-Text Label 14350 3600 2    50   ~ 0
-REJ3
 Text Label 14350 4500 2    50   ~ 0
 ~AS
 Wire Wire Line
@@ -8648,10 +8646,8 @@ Text Notes 14600 2850 0    79   ~ 0
 HEADER
 Text Notes 15700 13800 0    50   ~ 0
 _CLKE
-Text Notes 13850 10400 0    50   ~ 0
+Text Notes 13800 10400 0    50   ~ 0
 _CLKE
-Text Notes 13650 10500 0    50   ~ 0
-_DAE
 Connection ~ 11800 14350
 Wire Wire Line
 	11800 14350 11800 14200
@@ -8679,6 +8675,8 @@ F 3 "~" H 14850 2100 50  0001 C CNN
 $EndComp
 Text Label 14200 2200 0    50   ~ 0
 ~ARW
+Text Label 14350 3600 2    50   ~ 0
+_REJ3
 Wire Wire Line
 	12400 13100 14350 13100
 Wire Wire Line
