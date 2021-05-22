@@ -10,7 +10,7 @@ Device   G16V8MA ;
 
 
 PIN [1..20] = [!ARW, A20,    A19, !PRW, !UDS,  !LDS,  !ROME, !RE,  !RGAE, GND,
-               !DAE, !ROM01, !C1, !RRW, !LCEN, !UCEN, !CDR,  !CDW, !NC,  VCC];
+               !DAE, !ROM01, !C1, !RRW, !LCEN, !UCEN, !CDR,  !CDW, !NC,   VCC];
 
 
 
