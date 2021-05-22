@@ -18,22 +18,22 @@ ROM01 = ROME & !A18 & !WPRO & !SPROM & !PRW;
 
 CDR = CDR & LDS
     # CDR & UDS
-    # RE & !PRW & C1 &  A18
-    # RE & !PRW & C1 & !A18 & WPRO
-    # RE & !PRW & C1 & !A18 & SPROM;
+    # RE & !PRW & !C1 &  A18
+    # RE & !PRW & !C1 & !A18 & WPRO
+    # RE & !PRW & !C1 & !A18 & SPROM;
 
 CDW = RE & PRW
-    # CDW & C1;
+    # CDW & !C1;
 
-UCEN = UCEN & C1
+UCEN = UCEN & !C1
      # RE & UDS &  A18
      # RE & UDS & !A18 & WPRO
      # RE & UDS & !A18 & SPROM;
 
-LCEN = LCEN & C1
-     # RE & LDS &  A18
-     # RE & LDS & !A18 & WPRO
-     # RE & LDS & !A18 & SPROM;
+LCEN = LCEN & !C1
+    # RE & LDS &  A18
+    # RE & LDS & !A18 & WPRO
+    # RE & LDS & !A18 & SPROM;
 
 RRW = RE & PRW & A18 & !WPRO & !SPROM;
 

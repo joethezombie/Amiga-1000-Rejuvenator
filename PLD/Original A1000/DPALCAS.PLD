@@ -26,16 +26,16 @@ CDW = RE & PRW
     # RGAE & PRW
     # CDW & !C1;
 
-UCEN = DAE & !RE & UCEN
-     # DAE & !RE & C1
-     # DAE & !UDS & C1
-     # DAE & !UDS & UCEN;
+UCEN = !DAE & !RE & UCEN
+     # !DAE & !RE & C1
+     # !DAE & !UDS & C1
+     # !DAE & !UDS & UCEN;
 
-LCEN = DAE & !RE & LCEN
-     # DAE & !RE & C1
-     # DAE & !LDS & C1
-     # DAE & !LDS & LCEN;
+LCEN = !DAE & !RE & LCEN
+     # !DAE & !RE & C1
+     # !DAE & !LDS & C1
+     # !DAE & !LDS & LCEN;
 
 RRW = RE & PRW
-    # !DAE & ARW & C1
-    # RRW & !DAE;
+    # DAE & ARW & C1
+    # RRW & DAE;

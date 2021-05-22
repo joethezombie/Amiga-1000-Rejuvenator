@@ -14,17 +14,17 @@ PIN [1..20] = [A23, A22,  A21, !AS,  !DBR, OVL, !OVR,   XRDY, !C3,    GND,
 
 
 
-CNT = !DAE & C1 & !C3;
+CNT = !DAE & !C1 & C3;
 
-RE = AS & !DTACK &  A23 &  A22 &  A21 &  A20 &  A19 & !OVR & !C1 & C3
-   # AS & !DTACK & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & !OVL & !C1 & C3
-   # RE & !C1
-   # RE & !C3;
+RE = AS & !DTACK &  A23 &  A22 &  A21 &  A20 &  A19 & !OVR & C1 & !C3
+   # AS & !DTACK & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & OVL & C1 & !C3
+   # RE & C1
+   # RE & C3;
 
-DAE = C3 & C1
+DAE = !C3 & !C1
     # RE
-    # AS & !DTACK &  A23 &  A22 &  A21 &  A20 &  A19 & !OVR & !C1 & C3
-    # AS & !DTACK & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & !OVL & !C1 & C3;
+    # AS & !DTACK &  A23 &  A22 &  A21 &  A20 &  A19 & !OVR & C1 & !C3
+    # AS & !DTACK & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & OVL & C1 & !C3;
 
 ROME = AS &  A23 &  A22 &  A21 &  A20 &  A19 & !OVR
-     # AS & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & !OVL;
+     # AS & !A23 & !A22 & !A21 & !A20 & !A19 & !OVR & OVL;
