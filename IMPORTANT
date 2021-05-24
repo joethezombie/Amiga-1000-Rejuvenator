@@ -1,7 +1,7 @@
 Hey all,
 
 I had inadvertantly uploaded the wrong KiCAD design files at first.  If you are having boards made, please make sure you use the
-current artwork.  The initial upload contained a wandering VIA that stabbed the A7 and _CDRREJ lines, causing them to short.
+current artwork.  The initial upload contained a wandering via that stabbed the A7 and _CDRREJ lines, causing them to short.
 The correct artwork was uploaded shortly after.  But if you are an early forker, please ensure you complete a DRC check before
 having any boards made.
 
@@ -10,4 +10,5 @@ hole is a larger diameter, and the board is slightly smaller to fit inside the A
 with the A1000 capacitors fitting in the notch, and they had to be filed about 2mm in order to fit.  This has been corrected,
 but new boards have not been built with the current changes.
 
-I am continuing to improve the artwork, so just be warned, although the original was complete and tested, it is still being modified.
+I am continuing to improve the artwork, so just be warned, although the original was complete and tested, the most up-to-date
+revision has not been.  Changes made are minimal, I don't anticipate any further issues.
