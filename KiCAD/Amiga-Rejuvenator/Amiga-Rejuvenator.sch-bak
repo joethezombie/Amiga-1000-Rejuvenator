@@ -14,17 +14,6 @@ Comment3 "Recreation of The Rejuvenator for the A1000"
 Comment4 ""
 $EndDescr
 $Comp
-L Amiga-Rejuvenator:8361-Agnus U19B1
-U 1 1 5B8320A1
-P 23650 9500
-F 0 "U19B1" H 23650 10988 60  0000 C CNN
-F 1 "8361-Agnus" H 23200 11000 60  0001 L CNN
-F 2 "Package_DIP:DIP-48_W15.24mm_Socket" H 23000 8800 60  0001 C CNN
-F 3 "" H 23000 8800 60  0000 C CNN
-	1    23650 9500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Logic_Programmable:PAL16L8 U28
 U 1 1 5B83B1D0
 P 14850 7600
@@ -488,28 +477,6 @@ Text Label 21675 9000 2    50   ~ 0
 D1
 Text Label 21675 9100 2    50   ~ 0
 D0
-$Comp
-L Amiga-Rejuvenator:8364-Paula U20B1
-U 1 1 5C2D1BFC
-P 18850 3900
-F 0 "U20B1" H 18850 5388 60  0000 C CNN
-F 1 "8364-Paula" H 18400 5400 60  0001 L CNN
-F 2 "MOLEX_4455:48pin_blank_socket" H 19500 3900 60  0001 C CNN
-F 3 "" H 19500 3900 60  0000 C CNN
-	1    18850 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amiga-Rejuvenator:8362-Denise U25B1
-U 1 1 5C2D34C8
-P 18750 8900
-F 0 "U25B1" H 18750 10388 60  0000 C CNN
-F 1 "8362-Denise" H 18300 10400 60  0001 L CNN
-F 2 "MOLEX_4455:48pin_blank_socket" H 18100 8500 60  0001 C CNN
-F 3 "" H 18100 8500 60  0000 C CNN
-	1    18750 8900
-	1    0    0    -1  
-$EndComp
 NoConn ~ 18200 3300
 NoConn ~ 18200 3400
 NoConn ~ 18200 3500
@@ -1090,12 +1057,6 @@ Text Label 22475 18500 0    50   ~ 0
 i~CDAC
 Entry Wire Line
 	25150 17600 25250 17700
-Text Notes 18900 3375 1    118  ~ 0
-SOCKET
-Text Notes 18800 8300 1    118  ~ 0
-SOCKET
-Text Notes 23725 9125 1    118  ~ 0
-SOCKET
 $Comp
 L 74xx:74HC245 U34
 U 1 1 5BA18C37
@@ -3273,9 +3234,9 @@ Entry Wire Line
 Text Label 8200 10250 0    50   ~ 0
 PD15
 Text Label 6350 10450 2    50   ~ 0
-X8.~CDW
+~CDW~d
 Text Label 6350 10550 2    50   ~ 0
-X9.~CDW
+~CDW~e
 $Comp
 L power:+5V #PWR0206
 U 1 1 8598D67D
@@ -3841,9 +3802,9 @@ XD5
 Text Label 6150 11350 0    50   ~ 0
 XD6
 Text Label 6350 12250 2    50   ~ 0
-X6.~CDW
+~CDW~b
 Text Label 6350 12350 2    50   ~ 0
-X7.~CDW
+~CDW~c
 Text Label 6350 10250 2    50   ~ 0
 XD8
 Text Label 6350 10150 2    50   ~ 0
@@ -3875,11 +3836,11 @@ C4
 Wire Wire Line
 	10450 10450 9450 10450
 Text Label 4025 7850 0    50   ~ 0
-X2.C4
+C4b
 Text Label 4025 5850 0    50   ~ 0
-X5.~RE
+~RE~c
 Text Label 4025 7950 0    50   ~ 0
-X3.~RE
+~RE~b
 Entry Wire Line
 	5850 6550 5750 6650
 Wire Wire Line
@@ -5059,12 +5020,12 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 60DC1944
-P 7850 5000
-F 0 "R2" V 7750 4900 50  0000 L CNN
-F 1 "470" V 7850 4925 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7780 5000 50  0001 C CNN
-F 3 "~" H 7850 5000 50  0001 C CNN
-	1    7850 5000
+P 7900 5000
+F 0 "R2" V 7800 4900 50  0000 L CNN
+F 1 "470" V 7900 4900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 7830 5000 50  0001 C CNN
+F 3 "~" H 7900 5000 50  0001 C CNN
+	1    7900 5000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -5083,7 +5044,7 @@ L Connector:Conn_01x01_Male J19
 U 1 1 61357BA1
 P 7450 5000
 F 0 "J19" H 7500 4950 50  0001 R CNN
-F 1 "+12X" H 7500 5050 50  0000 R CNN
+F 1 "+12X" H 7450 5050 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7450 5000 50  0001 C CNN
 F 3 "~" H 7450 5000 50  0001 C CNN
 	1    7450 5000
@@ -5811,10 +5772,6 @@ Wire Wire Line
 Connection ~ 21600 21750
 Wire Wire Line
 	24100 18500 25050 18500
-Wire Wire Line
-	7400 4200 7400 4250
-Wire Wire Line
-	7400 4250 7300 4250
 $Comp
 L Amiga-Rejuvenator:3.6V_Varta BT1
 U 1 1 5D18ACC4
@@ -5826,14 +5783,6 @@ F 3 "~" V 7450 4060 50  0001 C CNN
 	1    7450 4000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7500 4200 7500 4250
-Wire Wire Line
-	7500 4250 7550 4250
-Wire Wire Line
-	7500 4250 7450 4250
-Connection ~ 7500 4250
-Connection ~ 7400 4250
 $Comp
 L Device:CP1_Small C39
 U 1 1 5C195D19
@@ -6223,13 +6172,6 @@ Wire Wire Line
 	7850 4650 7900 4650
 Wire Wire Line
 	7900 4600 7900 4650
-Connection ~ 7900 4650
-Wire Wire Line
-	8050 4650 8050 5000
-Wire Wire Line
-	8050 5000 8000 5000
-Wire Wire Line
-	7900 4650 8050 4650
 Entry Wire Line
 	10450 6050 10550 5950
 Entry Wire Line
@@ -7399,7 +7341,7 @@ PD3
 Text Label 4350 13050 0    50   ~ 0
 XD1
 Text Label 3100 12250 0    50   ~ 0
-X6.~CDW
+~CDW~b
 Text Label 3200 12850 0    50   ~ 0
 XD3
 Text Label 3200 13050 0    50   ~ 0
@@ -7407,7 +7349,7 @@ XD0
 Text Label 4350 13150 0    50   ~ 0
 PD0
 Text Label 4350 12350 0    50   ~ 0
-X7.~CDW
+~CDW~c
 Wire Wire Line
 	2950 10050 3600 10050
 Wire Wire Line
@@ -7474,7 +7416,7 @@ F 3 "~" H 4050 9900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3350 9350 0    50   ~ 0
-X8.~CDW
+~CDW~d
 Text Label 3400 9950 0    50   ~ 0
 XD12
 Text Label 3400 10150 0    50   ~ 0
@@ -7482,7 +7424,7 @@ XD15
 Text Label 4500 10250 0    50   ~ 0
 PD15
 Text Label 4500 9450 0    50   ~ 0
-X9.~CDW
+~CDW~e
 $Comp
 L Amiga-Rejuvenator:Board2Board[20-pin] U38
 U 1 1 6AD56A02
@@ -7537,7 +7479,7 @@ A16
 Text Label 2600 5450 0    50   ~ 0
 RA7
 Text Label 2550 4850 0    50   ~ 0
-X5.~RE
+~RE~c
 Wire Wire Line
 	2550 7150 2900 7150
 Wire Wire Line
@@ -7568,7 +7510,7 @@ A15
 Text Label 2600 7550 0    50   ~ 0
 RA6
 Text Label 2550 6950 0    50   ~ 0
-X3.~RE
+~RE~b
 Wire Wire Line
 	1450 5250 1650 5250
 Wire Wire Line
@@ -7615,7 +7557,7 @@ Wire Wire Line
 Text Label 1500 7350 0    50   ~ 0
 A10
 Text Label 1650 6850 2    50   ~ 0
-X2.C4
+C4b
 Text Label 1550 6950 0    50   ~ 0
 A4
 Text Label 1500 7050 0    50   ~ 0
@@ -8673,6 +8615,101 @@ Text Label 14200 2200 0    50   ~ 0
 ~ARW
 Text Label 14350 3600 2    50   ~ 0
 _REJ3
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6124A46E
+P 10150 4500
+F 0 "#FLG0101" H 10150 4575 50  0001 C CNN
+F 1 "PWR_FLAG" V 10150 4627 50  0000 L CNN
+F 2 "" H 10150 4500 50  0001 C CNN
+F 3 "~" H 10150 4500 50  0001 C CNN
+	1    10150 4500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10150 4500
+Wire Wire Line
+	10150 4500 10150 4950
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6124EFBD
+P 10250 4500
+F 0 "#FLG0102" H 10250 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 10050 4650 50  0000 L CNN
+F 2 "" H 10250 4500 50  0001 C CNN
+F 3 "~" H 10250 4500 50  0001 C CNN
+	1    10250 4500
+	0    1    1    0   
+$EndComp
+Connection ~ 10250 4500
+Wire Wire Line
+	10250 4500 10250 4750
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61252952
+P 7700 5000
+F 0 "#FLG0103" H 7700 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 7700 5173 50  0000 C CNN
+F 2 "" H 7700 5000 50  0001 C CNN
+F 3 "~" H 7700 5000 50  0001 C CNN
+	1    7700 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3750 7900 3750
+$Comp
+L Amiga-Rejuvenator:8362-Denise-Socket U25B1
+U 1 1 63AA8453
+P 18750 8900
+F 0 "U25B1" H 18750 10388 60  0000 C CNN
+F 1 "8362-Denise-Socket" H 18300 10400 60  0001 L CNN
+F 2 "MOLEX_4455:48pin_blank_socket" H 18100 8500 60  0001 C CNN
+F 3 "" H 18100 8500 60  0000 C CNN
+	1    18750 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amiga-Rejuvenator:8364-Paula-Socket U20B1
+U 1 1 63E982BC
+P 18850 3900
+F 0 "U20B1" H 18850 5388 60  0000 C CNN
+F 1 "8364-Paula-Socket" H 18400 5400 60  0001 L CNN
+F 2 "MOLEX_4455:48pin_blank_socket" H 19500 3900 60  0001 C CNN
+F 3 "" H 19500 3900 60  0000 C CNN
+	1    18850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amiga-Rejuvenator:8361-Agnus-Socket U19B1
+U 1 1 649700B7
+P 23650 9500
+F 0 "U19B1" H 23650 10988 60  0000 C CNN
+F 1 "8361-Agnus-Socket" H 23200 11000 60  0001 L CNN
+F 2 "Package_DIP:DIP-48_W15.24mm_Socket" H 25050 8800 60  0001 C CNN
+F 3 "" H 25050 8800 60  0000 C CNN
+	1    23650 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4250 7400 4250
+Wire Wire Line
+	7400 4200 7400 4250
+Connection ~ 7400 4250
+Wire Wire Line
+	7400 4250 7500 4250
+Wire Wire Line
+	7500 4200 7500 4250
+Connection ~ 7500 4250
+Wire Wire Line
+	7500 4250 7550 4250
+Wire Wire Line
+	7700 5000 7750 5000
+Connection ~ 7700 5000
+Wire Wire Line
+	7900 4650 8100 4650
+Wire Wire Line
+	8100 4650 8100 5000
+Wire Wire Line
+	8100 5000 8050 5000
 Wire Wire Line
 	12400 13100 14350 13100
 Wire Wire Line
@@ -8759,90 +8796,16 @@ Wire Bus Line
 	8500 16800 8500 20050
 Wire Bus Line
 	13050 1250 13050 14200
+Connection ~ 7900 4650
 $Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 6124A46E
-P 10150 4500
-F 0 "#FLG0101" H 10150 4575 50  0001 C CNN
-F 1 "PWR_FLAG" V 10150 4627 50  0000 L CNN
-F 2 "" H 10150 4500 50  0001 C CNN
-F 3 "~" H 10150 4500 50  0001 C CNN
-	1    10150 4500
-	0    -1   -1   0   
-$EndComp
-Connection ~ 10150 4500
-Wire Wire Line
-	10150 4500 10150 4950
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 6124EFBD
-P 10250 4500
-F 0 "#FLG0102" H 10250 4575 50  0001 C CNN
-F 1 "PWR_FLAG" H 9800 4600 50  0000 L CNN
-F 2 "" H 10250 4500 50  0001 C CNN
-F 3 "~" H 10250 4500 50  0001 C CNN
-	1    10250 4500
-	0    1    1    0   
-$EndComp
-Connection ~ 10250 4500
-Wire Wire Line
-	10250 4500 10250 4750
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 61252952
+L power:+12V #PWR0129
+U 1 1 6786F0B6
 P 7700 5000
-F 0 "#FLG?" H 7700 5075 50  0001 C CNN
-F 1 "PWR_FLAG" H 7700 5173 50  0000 C CNN
+F 0 "#PWR0129" H 7700 4850 50  0001 C CNN
+F 1 "+12V" H 7650 5150 50  0000 C CNN
 F 2 "" H 7700 5000 50  0001 C CNN
-F 3 "~" H 7700 5000 50  0001 C CNN
+F 3 "" H 7700 5000 50  0001 C CNN
 	1    7700 5000
-	-1   0    0    1   
-$EndComp
-Connection ~ 7700 5000
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 61256223
-P 7450 4250
-F 0 "#FLG?" H 7450 4325 50  0001 C CNN
-F 1 "PWR_FLAG" H 7200 4350 50  0000 C CNN
-F 2 "" H 7450 4250 50  0001 C CNN
-F 3 "~" H 7450 4250 50  0001 C CNN
-	1    7450 4250
-	-1   0    0    1   
-$EndComp
-Connection ~ 7450 4250
-Wire Wire Line
-	7450 4250 7400 4250
-Text Label 8250 4250 2    50   ~ 0
-BATT+
-$Comp
-L power:+BATT #PWR?
-U 1 1 612661B9
-P 7300 4250
-F 0 "#PWR?" H 7300 4100 50  0001 C CNN
-F 1 "+BATT" H 7300 4200 50  0000 C CNN
-F 2 "" H 7300 4250 50  0001 C CNN
-F 3 "" H 7300 4250 50  0001 C CNN
-	1    7300 4250
 	1    0    0    -1  
 $EndComp
-Connection ~ 7300 4250
-Wire Wire Line
-	7300 4250 7200 4250
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 61270D65
-P 7700 3750
-F 0 "#FLG?" H 7700 3825 50  0001 C CNN
-F 1 "PWR_FLAG" H 7950 3850 50  0000 C CNN
-F 2 "" H 7700 3750 50  0001 C CNN
-F 3 "~" H 7700 3750 50  0001 C CNN
-	1    7700 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 7700 3750
-Wire Wire Line
-	7700 3750 7900 3750
-Wire Wire Line
-	7450 3750 7700 3750
 $EndSCHEMATC
