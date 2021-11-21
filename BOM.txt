@@ -19,7 +19,7 @@ Qty.2  47uF  16V Radial Capacitor          C23, C32
 Qty.1  220uF 16V Radial Capacitor          C20
 Qty.1  22uF  16V Radial Capacitor          C37
 Qty.32 .1uF  16V CER CAP Radial            Decoupling Capacitors
-Qty.2  RES ARRAY 8 RES   33 OHM 16DIP       U23, U24
+Qty.2  RES ARRAY 8 RES   33 OHM 16DIP      U23, U24
 Qty.1  RES ARRAY 9 RES 3.3k OHM 10SIP      RP5
 Qty.4  RES ARRAY 9 RES 2.2k OHM 10SIP      RP1, RP2, RP3, RP4
 Qty.2  DIODE GEN PURP 100V 200MA DO35      CR1, CR2
