@@ -1,10 +1,14 @@
 Amiga 1000 Rejuvenator Re-creation Project
 -------------------------------------------------------------------------------------------
 
-Any projects, additions, alterations, or improvements based on this Amiga-1000-Rejuvenator
-project must be openly shared, including software or PLD coding.  I believe the license I
-have specified in LICENSE equates to this, but I am not a license expert, so suggestions
-are welcomed.  And with that out of the way...
+Any projects, additions, alterations, derivatives, or improvements based on this
+Amiga-1000-Rejuvenator project must be openly shared, including software or PLD coding.
+Additionally, on top of the LICENSE specified, the amigalove.com logo and Greg Tibbs name
+must always be present in digital releases, and prominently printed on physical productions.
+
+And with that out of the way...
+
+
 
 Thanks to the extreme graciousness of Eric Hill (intric8 at amigalove.com), I had on loan
 a Rejuvenator board for the Amiga 1000.  Originally created by Greg Tibbs, this Amiga 1000
@@ -13,7 +17,7 @@ slot, and additional Fast memory.  Installation requires replacing the A1000's
 daughterboard with the Rejuvenator.
 
 This project aims to re-create the original Rejuvenator, and eventually improve on the
-original design.
+design.
 
 Schematics and board artwork are complete, and have been fabricated and tested.  Several
 design errors on the original Rejuvenator which required bodge wires and trace cuts to
