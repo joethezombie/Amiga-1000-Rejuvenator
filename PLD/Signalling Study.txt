@@ -1,7 +1,0 @@
-Amiga 1000 Daughterboard
-
-_WPRO = Generated on pin 13 of DAUGCAS.
-Is not used on board, connected to unpopulated R8.
-
-BERR, RRW, LCEN, UCEN, CDR, ROM01 all use _WPRO in their equations.
-Possible that pin13 on U29 is _WPRO generation for use internally for the above.

@@ -1,0 +1,4 @@
+A special thank you to the legendary Matthias Heinrichs of A1K.org fame,
+who single handedly demystified the ancient PALs and supplied the code.
+
+Sir, you have my most sincere gratitude.
