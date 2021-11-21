@@ -31,7 +31,14 @@ Qty.2  SN74ALS373N                         U5, U15
 Qty.2  MC74F257AN                          U3, U35
 Qty.1  SN74AHCT74N                         U32
 Qty.1  T74LS04B1                           U33
-   
+
+
+Circular Machined pin header WARNING
+---------------------------------------------------------------------------------------------------------------------------
 Circular Machine pin headers in extended length might be difficult to find.  You can use additional 48-pin sockets to build
 the height up on the mainboard before equiping the rejuvenator if necessary. (Thanks to Mattsoft for this observation)
+
+If you use shorter pin headers without extending the socksets, the board will sit very low and will block the power LED
+connector.  You should also be mindful of possible shorting on the bottom of the Rejuvenator through hole components against
+the CIA and ROM chips on the Amiga 1000 motherboard.  An isolation shim might be a good idea if you opt to sit low.
 
