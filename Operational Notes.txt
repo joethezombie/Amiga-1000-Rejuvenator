@@ -52,29 +52,3 @@ Clip Leads to Rejuvenator:
     If _ROM01 is low: Enable the ROM chips at motherboard positions U2N, U2P, U5N, U5P.
     (ROM01 is connected to Pin 22 (OE) of all 4 ROM positions on the mainboard.
 
-    Equation (not simplified):
-
-    !ROM01 = !REJ3 & !A18 & !RESET & PRW & !REJKICK & !AS;
-      REJ3 is generated on Pin 19 of U28, SBPALN90
-      (!REJ3 =  A23 &  A22 &  A21 & OVR;)
-      _PRW (processor read/write) is generated on the 68000.  If low, write operation.  If high, read operation.
-      REJKICK is jumper JP100.  It must be jumpered to enable the motherboard ROMs.
-      _AS (address strobe) is generated on the 68000
-
-
-    _RE - generated on pin 16 of U31, SXRFSH90
-          connected to pin 8 of CAS header on mainboard.
-          connects back up to Rejuvenator on S257 headers at U2I and U2J
-          when low, enables 74F257s at U3 and U35 to allow 2-1 multiplexing of address lines to the RA bus.
-          when high, RA bus is left in Z state.
-
-          
-    
-
-     
-
-
-
-
-
-
