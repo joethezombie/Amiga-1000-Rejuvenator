@@ -4,7 +4,8 @@ Amiga 1000 Rejuvenator Re-creation Project
 Any projects, additions, alterations, derivatives, or improvements based on this
 Amiga-1000-Rejuvenator project must be openly shared, including software or PLD coding.
 Additionally, on top of the LICENSE specified, the amigalove.com logo and Greg Tibbs name
-must always be present in digital releases, and prominently printed on physical productions.
+must always be present in digital releases, and prominently printed on physical
+productions.
 
 And with that out of the way...
 
@@ -23,9 +24,9 @@ Schematics and board artwork are complete, and have been fabricated and tested. 
 design errors on the original Rejuvenator which required bodge wires and trace cuts to
 rectify have been identified and eliminated in the new design.
 
-Again, thanks to the absolute determination of Eric over at amigalove.com, arrangements
-were made to send the board overseas to Matthias Heinrichs of A1K.org who successfully
-solved the last piece of the puzzle and has provided the PLD code.
+Again, thanks to the unrelenting determination of Eric over at amigalove.com,
+arrangements were made to send the board overseas to Matthias Heinrichs of A1K.org who
+successfully solved the last piece of the puzzle and has provided the PLD code.
  
  It has been an abosulute pleasure working with these Amiga community staples!
  
