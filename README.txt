@@ -13,9 +13,9 @@ And with that out of the way...
 
 Thanks to the extreme graciousness of Eric Hill (intric8 at amigalove.com), I had on loan
 a Rejuvenator board for the Amiga 1000.  Originally created by Greg Tibbs, this Amiga 1000
-hardware upgrade provides up to 2MB Chip Memory, an onboard ROM based kickstart, a video
-slot, and additional Fast memory.  Installation requires replacing the A1000's
-daughterboard with the Rejuvenator.
+hardware upgrade provides up to 2MB Chip Memory, an onboard ROM based kickstart, and an
+A2000 style video slot.  Installation requires replacing the A1000's daughterboard with
+the Rejuvenator.
 
 This project aims to re-create the original Rejuvenator, and eventually improve on the
 design.
